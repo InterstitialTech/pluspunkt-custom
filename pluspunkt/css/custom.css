@@ -1,0 +1,10 @@
+.intro {
+  background-image: url("../images/pcb_dark.png");
+  background-color: #5700d1;
+}
+
+.portrait {
+  height: 96px;
+  width: auto;
+  border-radius:10%;
+}
