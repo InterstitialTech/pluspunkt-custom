@@ -1,0 +1,12 @@
+{% set footer = config.themes.pluspunkt.footer %}
+
+<div class="container">
+
+  <div>
+      {% for widget in config.themes.pluspunkt.footer.widgets %} 
+      <p>{{ widget.title }}</p>
+       {{ widget.content|markdown }}
+      {% endfor %}
+    </p>
+  </div>
+</div>

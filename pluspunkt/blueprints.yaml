@@ -97,10 +97,10 @@ form:
               type: text
               label: PLUGIN_ADMIN.TITLE
               validate:
-                required: true
+                required: false
 
             .content:
               type: editor
               label: PLUGIN_ADMIN.CONTENT
               validate:
-                required: true
+                required: false
