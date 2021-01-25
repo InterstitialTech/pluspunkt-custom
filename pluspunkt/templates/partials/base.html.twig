@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {% block favicons %}
-        <link rel="icon" href="{{ url('theme://images/favicon.ico', true) }}">
+        <link rel="icon" href="{{ url('theme://images/favicon.png', true) }}">
       {% endblock %}
 
       {% block jsonld %}
@@ -23,6 +23,8 @@
       {% endblock %}
 
       {% block webfont %}
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400&family=Source+Serif+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700" rel="stylesheet">
       {% endblock %}
 

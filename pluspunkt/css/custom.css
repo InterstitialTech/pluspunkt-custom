@@ -4,7 +4,63 @@
 }
 
 .portrait {
-  height: 96px;
+  height: auto;
   width: auto;
   border-radius:10%;
+}
+
+.intro.fullscreen {
+  height: calc(100% - 5em);
+}
+
+h1.intro-text { 
+  font-family: 'Source Serif Pro', serif;
+  font-weight: normal;
+  font-size:5em; 
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: 'Source Serif Pro', serif;
+  margin-bottom:1em;
+}
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:normal;
+}
+
+.home {
+  max-width:1200px;
+}
+
+@media (min-width: 768px) {
+  .home_col.two_col{
+    width:48%;
+  }
+  .home_col.three_col{
+    width:30%;
+  }
+  .home_col > .card {
+    height:100%;
+  }
+}
+
+.home_col .card h3 {
+  font-size: 12px;
+  text-transform:uppercase;
+}
+
+.widget {
+  padding-bottom:2%;
+}
+
+.home_col .card article {
+  padding:0;
+}
+
+footer .container {
+  border-top: solid 1px rgba(0, 0, 0, 0.3);
+  font-family: 'Source Serif Pro';
 }
