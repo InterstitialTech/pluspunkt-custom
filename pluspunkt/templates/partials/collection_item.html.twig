@@ -1,4 +1,4 @@
-{% set show_summary = truncate and page.content != page.summary %}
+{% set show_summary = header.summary.enabled|defined(true) and page.content != page.summary %}
 {% set show_download = page.header.download %}
 
 <div id="{{ page.slug }}" class="card ripple">

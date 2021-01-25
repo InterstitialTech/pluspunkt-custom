@@ -1,4 +1,4 @@
-{% set show_summary = truncate and page.content != page.summary %}
+{% set show_summary = header.summary.enabled|defined(true) and page.content != page.summary %}
 {% set show_email = page.header.person.contact.email %}
 {% set show_portrait = page.header.person.portrait %}
 
