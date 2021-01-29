@@ -13,11 +13,20 @@
   height: calc(100% - 5em);
 }
 
-h1.intro-text { 
+h1.intro-text {
   font-family: 'Source Serif Pro', serif;
   font-weight: normal;
-  font-size:5em; 
   line-height: 1.2em;
+}
+@media (min-width: 768px) {
+  h1.intro-text { 
+    font-size:5em; 
+  }
+}
+@media (min-width: 340px) and (max-width: 768px) {
+  h1.intro-text { 
+    font-size:3em; 
+  }
 }
 
 h2 {
@@ -63,4 +72,8 @@ body {
 footer .container {
   border-top: solid 1px rgba(0, 0, 0, 0.3);
   font-family: 'Source Serif Pro';
+}
+
+footer .container p {
+  padding:1em;
 }
