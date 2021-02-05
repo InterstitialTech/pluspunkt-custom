@@ -2,18 +2,19 @@
 {% set show_download = page.header.download %}
 {% set card_image = page.header.card.image %}
 {% if item_length > 2 %}
-    <div class="widget col home_col three_col">
+    <div class="widget col portfo_col three_col">
 {% else %}
-    <div class="widget col home_col two_col">
+    <div class="widget col portfo_col two_col">
 {% endif %}
+
     <div id="{{ page.slug }}" class="card ripple">
     {% if card_image %} 
-          <img src="{{ page.media[page.header.card.image.url].url }}" alt="{{ page.header.card.image.alt }}" class="card_image" />
+            <img src="{{ page.media[page.header.card.image.url].url }}" alt="{{ page.header.card.image.alt }}" class="card_image" />
     {% endif %}
     <article class="content">
         <header>
         <h3>
-           {{ page.title }}
+            <a href="{{ page.url }}">{{ page.title }}</a>
         </h3>
 
         {% include 'partials/taxonomies.html.twig' %}
@@ -47,5 +48,5 @@
         </div>
     {% endif %}
     #}
-    </div> 
+    </div>
 </div>

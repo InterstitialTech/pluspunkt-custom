@@ -17,16 +17,27 @@ h1.intro-text {
   font-family: 'Source Serif Pro', serif;
   font-weight: normal;
   line-height: 1.2em;
+  font-size: 3em;
 }
-@media (min-width: 768px) {
-  h1.intro-text { 
-    font-size:5em; 
-  }
+
+.home_top {
+  font-size:1.5em;
+  line-height:1.5em;
 }
-@media (min-width: 340px) and (max-width: 768px) {
-  h1.intro-text { 
-    font-size:3em; 
-  }
+.home_top a {
+  text-underline-offset: .25em;
+  font-weight: bold;
+  font-style: italic;
+}
+.home_col .card, .portfo_col .card {
+  padding: 0;
+}
+
+.home_col .card_image, .portfo_col .card_image {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 h2 {
@@ -36,8 +47,10 @@ h2 {
 
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   font-weight:normal;
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
 .home {
@@ -45,13 +58,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .home_col.two_col{
+  .two_col{
     width:48%;
   }
-  .home_col.three_col{
+  .three_col{
     width:30%;
   }
-  .home_col > .card {
+  .home_col > .card, .portfo_col > .card {
     height:100%;
   }
 }
@@ -65,8 +78,8 @@ body {
   padding-bottom:2%;
 }
 
-.home_col .card article {
-  padding:0;
+.home_col .card article, .portfo_col .card article {
+  padding:20px;
 }
 
 footer .container {

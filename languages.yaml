@@ -10,7 +10,6 @@ en:
     PORTRAIT: 'Portrait'
     ABOUT: 'About'
     BLOG: 'Blog'
-    HOME: 'Home'
     PERSON: 'Person'
     POST: 'Post'
     READ_MORE: 'Read more'
@@ -43,6 +42,7 @@ en:
     MEDIA: 'Media'
     MAIN_CONTENT: 'Main content'
     COLLECTION: 'Collection'
+    PORTFOLIO: 'Portfolio'
 
 de:
   THEME_PLUSPUNKT:
