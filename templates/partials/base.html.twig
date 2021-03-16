@@ -101,5 +101,8 @@
 
       {{ assets.js() }}
     {% endblock %}
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+    {% endblock %}
   </body>
 </html>
