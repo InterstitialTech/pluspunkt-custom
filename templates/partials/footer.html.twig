@@ -2,11 +2,10 @@
 
 <div class="container">
 
-  <div>
+  <div class="row gutters align-center">
       {% for widget in config.themes.pluspunkt.footer.widgets %} 
       <p>{{ widget.title }}</p>
        {{ widget.content|markdown }}
       {% endfor %}
-    </p>
   </div>
 </div>

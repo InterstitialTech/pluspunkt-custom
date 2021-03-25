@@ -7128,9 +7128,12 @@ ul.simple {
 
 footer {
   background-color: transparent;
-  padding: 24px 0; }
-  footer * {
-    color: #313439; }
+  padding: 24px 0;
+}
+
+footer * {
+  color: #313439;
+}
 
 .widget {
   padding: 0 20px; }
